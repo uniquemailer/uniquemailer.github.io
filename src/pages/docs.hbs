@@ -1,0 +1,344 @@
+{{> "layouts/main.hbs"}}
+{{> "components/navbar_white.hbs" }}
+
+{{#*inline "main-block"}}
+
+<!-- ====== Banner Section Start -->
+<div class="relative z-10 overflow-hidden pb-[60px] pt-[120px] dark:bg-dark md:pt-[130px] lg:pt-[160px]">
+  <div
+    class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-stroke/0 via-stroke to-stroke/0 dark:via-dark-3">
+  </div>
+  <div class="container">
+    <div class="flex flex-wrap items-center -mx-4">
+      <div class="w-full px-4">
+        <div class="text-center">
+          <h1 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+            Documentation
+          </h1>
+          <p class="mb-5 text-base text-body-color dark:text-dark-6">
+            There are many variations of passages of Lorem Ipsum available.
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ====== Banner Section End -->
+<div class="container mx-auto px-4">
+
+
+
+
+  <div class="grid grid-cols-4 gap-4">
+
+    <div class="columns-3xs">
+
+        <ul class="list-none">
+          <li class="mb-12">
+            <a href="#quickstart" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Quickstart</a></li>
+
+          <li class=" mb-12">
+            <a href="#installation" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Installation</a>
+          </li>
+          <li class=" mb-12">
+            <a href="#configuration" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Configuration</a>
+          </li>
+          <li class=" mb-12">
+            <a href="#queues" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Running Queues</a>
+          </li>
+          <li class=" mb-12">
+            <a href="#templates" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Creating Templates</a>
+          </li>
+          <li class=" mb-12">
+            <a href="#placeholders" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Placeholders</a>
+          </li>
+          <li class=" mb-12">
+            <a href="#email_templates" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Email Templates</a>
+          </li>
+
+          <li class=" mb-12">
+            <a href="#services" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Setting up Services</a>
+          </li>
+          <li class=" mb-12">
+            <a href="#sending" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Sending emails manually</a>
+          </li>
+
+          <li class=" mb-12">
+            <a href="#token" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Generating API Token</a>
+          </li>
+          <li class=" mb-12"><a href="#api" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">API Endpoints</a></li>
+          <li class=" mb-12"><a href="#working" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Working with API</a></li>
+          <li class=" mb-12"><a href="#auditing" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Auditing Emails</a></li>
+        </ul>
+
+    </div>
+    <div class="columns-9xs">
+
+      <section class="section content" id="quickstart">
+        <h3 class="is-size-3">Quickstart</h3>
+        <p>
+          SendBox is built with Laravel framework. The current release is based
+          on Laravel v8. All server requirements are the same as with Laravel.
+        </p>
+        <blockquote>
+          <ul class="list-unstyled">
+            <li>PHP 8.1 or higher</li>
+            <li>Laravel 9 or higher</li>
+            <li>Redis</li>
+            <li>MySQL 5.7 or higher</li>
+          </ul>
+        </blockquote>
+        <p>
+          We highly recomend you to use Redis for cache and queue support.
+        </p>
+      </section>
+      <section class="section is-medium" id="installation">
+        <h3 class="is-size-3">Installation</h3>
+        <p>Clone or download the repository to your server:</p>
+
+        <code>
+              git clone https://github.com/sendboxuk/application.git
+            </code>
+
+        <p>or download latest release from:</p>
+
+        <code> https://github.com/sendboxuk/application/releases </code>
+
+        <p>Run composer to install dependecies</p>
+
+        <code> composer install </code>
+
+        <p>Update application permissions</p>
+
+        <code>
+              chmod -R 755 storage sudo chown -R www-data:www-data storage
+              bootstrap public/logo
+            </code>
+        <p>
+          Create a database in your mysql or mariadb and migration tool and
+          populate the database with sample data
+        </p>
+
+        <code> php artisan migrate:refresh --seed </code>
+
+        <p>
+          Now your application is ready to run. Browse to your website and login
+          with following credentials:
+        </p>
+        <code>
+              <p><i>username: demo@sendbox.uk </i></p>
+
+              <p><i>password: password</i></p>
+            </code>
+      </section>
+      <section class="section content is-medium" id="configuration">
+        <h3 class="is-size-3">Configuration</h3>
+
+        <p>
+          You need to update the environment variables in
+          <code>.env</code> file. You will find this file at the root of the application.
+        </p>
+
+        <p>
+          All of the configuration files for the Laravel framework are stored in the config directory. You may get
+          more details by visiting
+          the URL below.
+        </p>
+        <code>https://laravel.com/docs/10.x/configuration</code>
+
+        <p>
+          The current version is only supporting SMTP option. The new mail driver are on the way. You may setup the mail
+          driver using
+          settings page.
+        </p>
+
+      </section>
+
+
+
+      <section class="section is-medium" id="queues">
+        <h3 class="is-size-3">Running Queues</h3>
+        <p>SendBox supports Queues by default. If you follow Laravel's Queue instruction, it will give a great
+          performance under heavy traffic</p>
+
+        <strong>Default queue</strong>
+        <code>
+  <pre>php artisan queue:worl --queue=emails --tries=3
+</pre>
+</code>
+
+        <strong>Try failed job</strong>
+        <code>
+  <pre>php artisan queue:failed --queue=emails
+</pre>
+</code>
+
+        <strong>Prune failed jobs after 48 hours</strong>
+        <strong>Try failed job</strong>
+        <code>
+  <pre>php artisan queue:prune-failed --hours=48
+</pre>
+</code>
+
+
+
+      </section>
+
+      <section class="section is-medium" id="templates">
+        <h3 class="is-size-3">Creating Templates</h3>
+        <p>
+          Templates are playing a major role in SendBox.
+          You need to design your template carefully.
+          You need to place your variables as mustache template syntax.
+
+          After creating template details, you may start to update the HTML codes using onli editor.
+        </p>
+        <strong>Now first, you need to create template details with placeholders</strong>
+        <p>
+          You will put these variables into placeholders' textarea separating with comma. The system will replace
+          your values before sending the email.
+        </p>
+        <img class="image" src="/static/img/docs/create_template-v2.jpg" alt="" />
+        <p>
+          After creating a template, you may start to update the HTML codes of the email. Online editor gives you
+          the same working at your computer.
+
+        </p>
+        <img class="image" src="/static/img/docs/update_email_templates-online.jpg" alt="" />
+
+      </section>
+      <section class="section is-medium" id="placeholders">
+        <h3 class="is-size-3">Sensitive Placeholders</h3>
+        <p>
+          Placeholders are the variables in your email templates. You need to set the variable names
+          while creating your templates. By default, all placeholders are saving to audit log table to
+          review or resend. If you're sending a sensitive information and not wanting to save to the database,
+          you should put your variable name in sebsitive placeholder textbox.
+        </p>
+        <img class="image" src="/static/img/docs/sensitive_placeholder.jpg" alt="" />
+      </section>
+      <section class="section is-medium" id="email_templates">
+        <h3 class="is-size-3">Email Template and Variables</h3>
+        <p>
+          SendBox allows you to create and update email templates online. First, you need to create a template
+          record before updating HTML.
+          After adding the placeholders into template mode, you may start to update the template. The template page
+          has a highlighting editor.
+        </p>
+        <img class="image" src="/static/img/docs/email_temple.jpg" alt="" />
+      </section>
+
+
+      <section class="section is-medium" id="services">
+        <h3 class="is-size-3">Setting up Services</h3>
+        <p>
+          Create a service and choose a template. Each template has its own placeholders. When you choose a
+          template,
+          your service will fill the placeholders with variables in Service API. You can add receipts for each
+          service.
+        </p>
+        <img class="image" src="/static/img/docs/create-service-122456.jpg" alt="" />
+        <p>
+          The above image is a very good example of usage. It's using a special template. The system will choose the
+          right template designed for this service and update the variables using a template placeholder.
+        </p>
+      </section>
+      <section class="section is-medium" id="sending">
+        <h3 class="is-size-3">Sending Emails Manually</h3>
+        <p>
+          Sendbox is design to work with APIs and also allows you to resend the emails. But if you wish to
+          test the templates or new products, you may use manual email sending system. All you need is to
+          choose a template or product and click on the Send Email button. The system will prepar you a wizard form
+          based on your selection.
+        </p>
+
+        <img class="image" src="/static/img/docs/send-manual-email-122727.jpg" alt="" />
+      </section>
+
+      <section class="section is-medium" id="token">
+        <h3 class="is-size-3">Generating API Token</h3>
+        <p>
+          Communication with your application and system is based on API. We're using API Token to protect the
+          SendBox. You need to generate your
+          API Key from the Settings page. Don't forget to copy the key after you generated it.
+        </p>
+
+        <img class="image" src="/static/img/docs/create_api_key.jpg" alt="" />
+      </section>
+      <section class="section is-medium" id="api">
+        <h3 class="is-size-3">API Endpoints</h3>
+
+        <p>
+          SendBox has two API endpoints. You may choose a product to send the email or you may choose a template. If
+          you will send a
+          notification or announcement, choosing a template will be a better choice.
+        </p>
+        <code>
+              <p>{API_URL}/api/services/{SERVICE_SLUG}/send</p>
+            </code>
+
+        <p>Listing all registed services</p>
+        <code><p>{API_URL}/api/services</p></code>
+
+        <p>Single service with template placeholders</p>
+        <code><p>
+  {API_URL}/api/services/{SERVICE_SLUG}/show
+</p></code>
+
+
+        <p>Get all templates:</p>
+        <code><p>
+  {API_URL}/api/templates
+</p></code>
+
+
+        <p>All sent emails</p>
+        <code><p>
+  {API_URL}/api/audit/emails
+</p></code>
+        <p>
+          Both API URL is token-based protected. You must send this token in the
+          Authorization header when making requests to protected resources:
+        </p>
+
+
+        <code>Authorization: Bearer {$token}</code>
+      </section>
+      <section class="section is-medium" id="working">
+        <h3 class="is-size-3">Working with API</h3>
+        <p>Each template or product page also shows you a presentation of the JSON body with an example.
+          While creating API clients, will give you a start point.
+
+        </p>
+
+        <code>
+  <pre>
+    {
+          "customer_name": "John Doe",
+          "order_numver": "ABC101010101",
+          "serial_key": "5555-5555-5555-5555"
+  }
+</pre>
+</code>
+
+
+        <p>
+          As you see that, both API must have email and transaction_id entries in the first part of the JSON body.
+          If you choose a product, you should provide the SKU of the product. If you'll use a directly template,
+          you need to enter template ID.
+        </p>
+      </section>
+      <section class="section is-medium" id="auditing">
+        <h3 class="is-size-3">Auditing Emails</h3>
+        <p>Copy of each mail stored in the database. You may filter the results by email or transaction Id.
+          You may use the order Ids as transaction Id, so you may easily find a copy of the email in the database.
+        </p>
+      </section>
+    </div>
+  </div>
+
+</div>
+
+{{/inline}}
