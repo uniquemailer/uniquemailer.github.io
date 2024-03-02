@@ -1,4 +1,4 @@
-{{> "layouts/main.hbs"}} 
+{{> "layouts/main.hbs"}}
 {{#*inline "main-block"}}
 
 <!-- ====== Banner Section Start -->
@@ -21,132 +21,149 @@
 <!-- ====== Banner Section End -->
 
 <section class="pb-8 pt-20 dark:bg-dark lg:pb-[70px]">
-<div class="container mx-auto px-4">
-  <div class="-mx-4 flex flex-wrap">
+  <div class="container mx-auto px-4">
+    <div class="-mx-4 flex flex-wrap">
 
-    <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
 
         <ul class="list-none">
           <li class="mb-6">
-            <a href="#quickstart" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Quickstart</a></li>
-
-          <li class=" mb-6">
-            <a href="#installation" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Installation</a>
-          </li>
-          <li class=" mb-6">
-            <a href="#configuration" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Configuration</a>
-          </li>
-          <li class=" mb-6">
-            <a href="#queues" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Running Queues</a>
-          </li>
-          <li class=" mb-6">
-            <a href="#templates" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Creating Templates</a>
-          </li>
-          <li class=" mb-6">
-            <a href="#placeholders" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Placeholders</a>
-          </li>
-          <li class=" mb-6">
-            <a href="#email_templates" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Email Templates</a>
+            <a href="#quickstart"
+              class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Quickstart</a>
           </li>
 
           <li class=" mb-6">
-            <a href="#services" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Setting up Services</a>
+            <a href="#installation"
+              class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Installation</a>
           </li>
           <li class=" mb-6">
-            <a href="#sending" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Sending emails manually</a>
+            <a href="#configuration"
+              class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Configuration</a>
+          </li>
+          <li class=" mb-6">
+            <a href="#queues" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Running
+              Queues</a>
+          </li>
+          <li class=" mb-6">
+            <a href="#templates" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Creating
+              Templates</a>
+          </li>
+          <li class=" mb-6">
+            <a href="#placeholders"
+              class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Placeholders</a>
+          </li>
+          <li class=" mb-6">
+            <a href="#email_templates"
+              class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Email Templates</a>
           </li>
 
           <li class=" mb-6">
-            <a href="#token" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Generating API Token</a>
+            <a href="#services" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Setting
+              up Services</a>
           </li>
-          <li class=" mb-6"><a href="#api" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">API Endpoints</a></li>
-          <li class=" mb-6"><a href="#working" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Working with API</a></li>
-          <li class=" mb-6"><a href="#auditing" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Auditing Emails</a></li>
+          <li class=" mb-6">
+            <a href="#sending" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Sending
+              emails manually</a>
+          </li>
+
+          <li class=" mb-6">
+            <a href="#token" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Generating
+              API Token</a>
+          </li>
+          <li class=" mb-6"><a href="#api"
+              class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">API Endpoints</a></li>
+          <li class=" mb-6"><a href="#working"
+              class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Working with API</a></li>
+          <li class=" mb-6"><a href="#auditing"
+              class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Auditing Emails</a></li>
         </ul>
 
-    </div>
-    <div class="w-full px-4 md:w-1/2 lg:w-2/3">
+      </div>
+      <div class="w-full px-4 md:w-1/2 lg:w-2/3">
 
-      <section id="quickstart" class="mb-12">
-        <h3 class="text-xl font-bold">Quickstart</h3>
-        <p>
-          SendBox is built with Laravel framework. The current release is based
-          on Laravel v8. All server requirements are the same as with Laravel.
-        </p>
-        <blockquote class="px-2 bg-gray-2 m-4">
-          <ul class="list-none">
-            <li>PHP 8.1 or higher</li>
-            <li>Laravel 9 or higher</li>
-            <li>Redis</li>
-            <li>MySQL 5.7 or higher</li>
-          </ul>
-        </blockquote>
-        <p>
-          We highly recomend you to use Redis for cache and queue support.
-        </p>
-      </section>
+        <section id="quickstart" class="mb-12">
+          <h3 class="text-xl font-bold">Quickstart</h3>
+          <p>
+            SendBox is built with Laravel framework. The current release is based
+            on Laravel v8. All server requirements are the same as with Laravel.
+          </p>
+          <blockquote class="px-2 bg-gray-2 m-4">
+            <ul class="list-none">
+              <li>PHP 8.1 or higher</li>
+              <li>Laravel 9 or higher</li>
+              <li>Redis</li>
+              <li>MySQL 5.7 or higher</li>
+            </ul>
+          </blockquote>
+          <p>
+            We highly recomend you to use Redis for cache and queue support.
+          </p>
+        </section>
 
-      <section id="installation" class="mb-12">
-        <h3 class="text-xl font-bold">Installation</h3>
-        <p>Clone or download the repository to your server:</p>
+        <section id="installation" class="mb-12">
+          <h3 class="text-xl font-bold">Installation</h3>
+          <p>Clone or download the repository to your server:</p>
 
-        <code class="px-2 bg-gray-2 m-4">
+          <code class="px-2 bg-gray-2 m-4">
               git clone https://github.com/sendboxuk/application.git
             </code>
 
-        <p>or download latest release from:</p>
+          <p>or download latest release from:</p>
 
-        <code class="px-2 bg-gray-2 m-4"> https://github.com/sendboxuk/application/releases </code>
+          <code class="px-2 bg-gray-2 m-4"> https://github.com/sendboxuk/application/releases </code>
 
-        <p>Run composer to install dependecies</p>
+          <p>Run composer to install dependecies</p>
 
-        <cod class="px-2 bg-gray-2 m-4"> composer install </code>
+          <cod class="px-2 bg-gray-2 m-4"> composer install </code>
 
-        <p>Update application permissions</p>
+            <p>Update application permissions</p>
 
-        <code class="px-2 bg-gray-2 m-4">
+            <code class="px-2 bg-gray-2 m-4">
               chmod -R 755 storage sudo chown -R www-data:www-data storage
               bootstrap public/logo
             </code>
-        <p>
-          Create a database in your mysql or mariadb and migration tool and
-          populate the database with sample data
-        </p>
+            <p>
+              Create a database in your mysql or mariadb and migration tool and
+              populate the database with sample data
+            </p>
 
-        <code class="px-2 bg-gray-2 m-4"> php artisan migrate:refresh --seed </code>
+            <code class="px-2 bg-gray-2 m-4"> php artisan migrate:refresh --seed </code>
 
-        <p>
-          Now your application is ready to run. Browse to your website and login
-          with following credentials:
-        </p>
-        <code class="px-2 bg-gray-2 m-4">
+            <p>
+              Now your application is ready to run. Browse to your website and login
+              with following credentials:
+            </p>
+            <code class="px-2 bg-gray-2 m-4">
               username: test@example.com 
 
               password: password
             </code>
-      </section> 
-      <section id="configuration" class="mb-12">
-        <h3  class="text-xl font-bold">Configuration</h3>
+        </section>
 
-        <p>
-          You need to update the environment variables in
-          <code>.env</code> file. You will find this file at the root of the application.
-        </p>
 
-        <p>
-          All of the configuration files for the Laravel framework are stored in the config directory. You may get
-          more details by visiting
-          the URL below.
-        </p>
-        <code>https://laravel.com/docs/10.x/configuration</code>
+        <section id="configuration" class="mb-12">
+          <h3 class="text-xl font-bold">Configuration</h3>
 
-        <p>
-          The current version is only supporting SMTP option. The new mail driver are on the way. You may setup the mail
-          driver using
-          settings page.
-        </p>
+          <p>
+            You need to update the environment variables in
+            <code>.env</code> file. You will find this file at the root of the application.
+          </p>
 
-      </section>
+          <p>
+            All of the configuration files for the Laravel framework are stored in the config directory. You may get
+            more details by visiting
+            the URL below.
+          </p>
+          <code>https://laravel.com/docs/10.x/configuration</code>
+
+          <p>
+            The current version is only supporting SMTP option. The new mail driver are on the way. You may setup the
+            mail
+            driver using
+            settings page.
+          </p>
+
+        </section>
 
 
 
@@ -187,14 +204,11 @@
           You will put these variables into placeholders' textarea separating with comma. The system will replace
           your values before sending the email.
         </p>
-        <img class="image" src="/static/img/docs/create_template-v2.jpg" alt="" />
+
         <p>
           After creating a template, you may start to update the HTML codes of the email. Online editor gives you
           the same working at your computer.
-
         </p>
-        <img class="image" src="/static/img/docs/update_email_templates-online.jpg" alt="" />
-
       </section>
       <section  class="mb-12" id="placeholders">
         <h3  class="text-xl font-bold">Sensitive Placeholders</h3>
@@ -204,7 +218,7 @@
           review or resend. If you're sending a sensitive information and not wanting to save to the database,
           you should put your variable name in sebsitive placeholder textbox.
         </p>
-        <img class="image" src="/static/img/docs/sensitive_placeholder.jpg" alt="" />
+
       </section>
       <section  class="mb-12" id="email_templates">
         <h3  class="text-xl font-bold">Email Template and Variables</h3>
@@ -214,7 +228,7 @@
           After adding the placeholders into template mode, you may start to update the template. The template page
           has a highlighting editor.
         </p>
-        <img class="image" src="/static/img/docs/email_temple.jpg" alt="" />
+ 
       </section>
 
 
@@ -321,9 +335,11 @@
           You may use the order Ids as transaction Id, so you may easily find a copy of the email in the database.
         </p>
       </section>
-    </div>
-  </div>
 
-</div>
+
+      </div>
+    </div>
+
+  </div>
 </section>
 {{/inline}}
