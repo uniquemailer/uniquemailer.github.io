@@ -1,0 +1,486 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Documentation</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+  <script type="module" crossorigin src="/assets/main-gpkXrv_Y.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-Ci2qAMDY.css">
+</head>
+
+<body>
+
+    <!-- ====== Navbar Section Start -->
+    <div class="ud-header absolute left-0 top-0 z-40 flex w-full items-center  bg-primary ">
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-60 max-w-full px-4">
+            <h4 class="mb-3 text-4xl font-bold text-zinc-900 dark:text-white font-mono header-logo w-full">
+              <a href="/" class="block w-full py-5 navbar-logo">
+                <span class="italic text-white">unique</span>mailer
+              </a>
+            </h4>
+    
+          </div>
+          <div class="flex w-full items-center justify-between px-4">
+            <div>
+              <button id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+              </button>
+              <nav id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
+                <ul class="block lg:flex 2xl:ml-20">
+    
+                  <li class="group relative">
+                    <a href="/features"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
+                      Features
+                    </a>
+                  </li>
+    
+                  <li class="group relative">
+                    <a href="/docs"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
+                      Documentation
+                    </a>
+                  </li>
+    
+                  <li class="group relative">
+                    <a href="/download"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
+                      Download
+                    </a>
+                  </li>              
+    
+                </ul>
+              </nav>
+            </div>
+            <div class="flex items-center justify-end pr-16 lg:pr-0">
+              <div class="hidden sm:flex">
+                <ul class="mb-1 flex flex-wrap items-center justify-center gap-5">
+                  <li>
+                    <a href="https://github.com/tailgrids/play-tailwind" target="_blank"
+                      class="flex items-center gap-4 rounded-md bg-white/[0.12] px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark">
+                      <svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2005_10818)">
+                          <path
+                            d="M12 0.674805C5.625 0.674805 0.375 5.8498 0.375 12.2998C0.375 17.3998 3.7125 21.7498 8.3625 23.3248C8.9625 23.4373 9.15 23.0623 9.15 22.7998C9.15 22.5373 9.15 21.7873 9.1125 20.7748C5.8875 21.5248 5.2125 19.1998 5.2125 19.1998C4.6875 17.8873 3.9 17.5123 3.9 17.5123C2.85 16.7623 3.9375 16.7623 3.9375 16.7623C5.1 16.7998 5.7375 17.9623 5.7375 17.9623C6.75 19.7623 8.475 19.2373 9.1125 18.8998C9.225 18.1498 9.525 17.6248 9.8625 17.3248C7.3125 17.0623 4.575 16.0498 4.575 11.6248C4.575 10.3498 5.0625 9.3373 5.775 8.5498C5.6625 8.2873 5.25 7.0873 5.8875 5.4748C5.8875 5.4748 6.9 5.1748 9.1125 6.6748C10.05 6.4123 11.025 6.2623 12.0375 6.2623C13.05 6.2623 14.0625 6.3748 14.9625 6.6748C17.175 5.2123 18.15 5.4748 18.15 5.4748C18.7875 7.0498 18.4125 8.2873 18.2625 8.5498C19.0125 9.3373 19.4625 10.3873 19.4625 11.6248C19.4625 16.0498 16.725 17.0623 14.175 17.3248C14.5875 17.6998 14.9625 18.4498 14.9625 19.4998C14.9625 21.0748 14.925 22.3123 14.925 22.6873C14.925 22.9873 15.15 23.3248 15.7125 23.2123C20.2875 21.6748 23.625 17.3623 23.625 12.2248C23.5875 5.8498 18.375 0.674805 12 0.674805Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_2005_10818">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Star on Github
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Navbar Section End -->
+    
+    
+    
+    <!-- ====== Banner Section Start -->
+    <div class="relative z-10 overflow-hidden pb-[60px] pt-[120px] dark:bg-dark md:pt-[130px] lg:pt-[160px]">
+      <div
+        class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-stroke/0 via-stroke to-stroke/0 dark:via-dark-3">
+      </div>
+      <div class="container">
+        <div class="flex flex-wrap items-center -mx-4">
+          <div class="w-full px-4">
+            <div class="text-center">
+              <h1 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+                Documentation
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Banner Section End -->
+    
+    <section class="pb-8 pt-20 dark:bg-dark lg:pb-[70px]">
+      <div class="container mx-auto px-4">
+        <div class="-mx-4 flex flex-wrap">
+    
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+    
+            <ul class="list-none">
+              <li class="mb-6">
+                <a href="#quickstart"
+                  class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Quickstart</a>
+              </li>
+    
+              <li class=" mb-6">
+                <a href="#installation"
+                  class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Installation</a>
+              </li>
+              <li class=" mb-6">
+                <a href="#configuration"
+                  class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Configuration</a>
+              </li>
+              <li class=" mb-6">
+                <a href="#queues" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Running
+                  Queues</a>
+              </li>
+              <li class=" mb-6">
+                <a href="#templates" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Creating
+                  Templates</a>
+              </li>
+              <li class=" mb-6">
+                <a href="#placeholders"
+                  class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Placeholders</a>
+              </li>
+              <li class=" mb-6">
+                <a href="#email_templates"
+                  class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Email Templates</a>
+              </li>
+    
+              <li class=" mb-6">
+                <a href="#services" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Setting
+                  up Services</a>
+              </li>
+              <li class=" mb-6">
+                <a href="#sending" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Sending
+                  emails manually</a>
+              </li>
+    
+              <li class=" mb-6">
+                <a href="#token" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Generating
+                  API Token</a>
+              </li>
+              <li class=" mb-6"><a href="#api"
+                  class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">API Endpoints</a></li>
+              <li class=" mb-6"><a href="#working"
+                  class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Working with API</a></li>
+              <li class=" mb-6"><a href="#auditing"
+                  class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Auditing Emails</a></li>
+            </ul>
+    
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-2/3">
+    
+            <section id="quickstart" class="mb-12">
+              <h3 class="text-xl font-bold">Quickstart</h3>
+              <p>
+                SendBox is built with Laravel framework. The current release is based
+                on Laravel v8. All server requirements are the same as with Laravel.
+              </p>
+              <blockquote class="px-2 bg-gray-2 m-4">
+                <ul class="list-none">
+                  <li>PHP 8.1 or higher</li>
+                  <li>Laravel 9 or higher</li>
+                  <li>Redis</li>
+                  <li>MySQL 5.7 or higher</li>
+                </ul>
+              </blockquote>
+              <p>
+                We highly recomend you to use Redis for cache and queue support.
+              </p>
+            </section>
+    
+            <section id="installation" class="mb-12">
+              <h3 class="text-xl font-bold">Installation</h3>
+              <p>Clone or download the repository to your server:</p>
+    
+              <code class="px-2 bg-gray-2 m-4">
+                  git clone https://github.com/sendboxuk/application.git
+                </code>
+    
+              <p>or download latest release from:</p>
+    
+              <code class="px-2 bg-gray-2 m-4"> https://github.com/sendboxuk/application/releases </code>
+    
+              <p>Run composer to install dependecies</p>
+    
+              <cod class="px-2 bg-gray-2 m-4"> composer install </code>
+    
+                <p>Update application permissions</p>
+    
+                <code class="px-2 bg-gray-2 m-4">
+                  chmod -R 755 storage sudo chown -R www-data:www-data storage
+                  bootstrap public/logo
+                </code>
+                <p>
+                  Create a database in your mysql or mariadb and migration tool and
+                  populate the database with sample data
+                </p>
+    
+                <code class="px-2 bg-gray-2 m-4"> php artisan migrate:refresh --seed </code>
+    
+                <p>
+                  Now your application is ready to run. Browse to your website and login
+                  with following credentials:
+                </p>
+                <code class="px-2 bg-gray-2 m-4">
+                  username: test@example.com 
+    
+                  password: password
+                </code>
+            </section>
+    
+    
+            <section id="configuration" class="mb-12">
+              <h3 class="text-xl font-bold">Configuration</h3>
+    
+              <p>
+                You need to update the environment variables in
+                <code>.env</code> file. You will find this file at the root of the application.
+              </p>
+    
+              <p>
+                All of the configuration files for the Laravel framework are stored in the config directory. You may get
+                more details by visiting
+                the URL below.
+              </p>
+              <code>https://laravel.com/docs/10.x/configuration</code>
+    
+              <p>
+                The current version is only supporting SMTP option. The new mail driver are on the way. You may setup the
+                mail
+                driver using
+                settings page.
+              </p>
+    
+            </section>
+    
+    
+    
+          <section id="queues"  class="mb-12">
+            <h3  class="text-xl font-bold">Running Queues</h3>
+            <p class="mb-12">SendBox supports Queues by default. If you follow Laravel's Queue instruction, it will give a great
+              performance under heavy traffic</p>
+    
+            <span class="font-semibold">Default queue</span>
+             
+      <pre>php artisan queue:worl --queue=emails --tries=3
+    </pre>
+     
+            <span class="font-semibold">Try failed job</span>
+            
+      <pre>php artisan queue:failed --queue=emails
+    </pre>
+     
+            <span class="font-semibold">Prune failed jobs after 48 hours</span>
+            <span class="font-semibold">Try failed job</span>
+            
+      <pre>php artisan queue:prune-failed --hours=48
+    </pre>
+    
+          </section>
+    
+          <section  class="mb-12" id="templates">
+            <h3  class="text-xl font-bold">Creating Templates</h3>
+            <p>
+              Templates are playing a major role in SendBox.
+              You need to design your template carefully.
+              You need to place your variables as mustache template syntax.
+    
+              After creating template details, you may start to update the HTML codes using onli editor.
+            </p>
+            <span class="font-semibold">Now first, you need to create template details with placeholders</span>
+            <p>
+              You will put these variables into placeholders' textarea separating with comma. The system will replace
+              your values before sending the email.
+            </p>
+    
+            <p>
+              After creating a template, you may start to update the HTML codes of the email. Online editor gives you
+              the same working at your computer.
+            </p>
+          </section>
+          <section  class="mb-12" id="placeholders">
+            <h3  class="text-xl font-bold">Sensitive Placeholders</h3>
+            <p>
+              Placeholders are the variables in your email templates. You need to set the variable names
+              while creating your templates. By default, all placeholders are saving to audit log table to
+              review or resend. If you're sending a sensitive information and not wanting to save to the database,
+              you should put your variable name in sebsitive placeholder textbox.
+            </p>
+    
+          </section>
+          <section  class="mb-12" id="email_templates">
+            <h3  class="text-xl font-bold">Email Template and Variables</h3>
+            <p>
+              SendBox allows you to create and update email templates online. First, you need to create a template
+              record before updating HTML.
+              After adding the placeholders into template mode, you may start to update the template. The template page
+              has a highlighting editor.
+            </p>
+     
+          </section>
+    
+    
+          <section  class="mb-12" id="services">
+            <h3  class="text-xl font-bold">Setting up Services</h3>
+            <p>
+              Create a service and choose a template. Each template has its own placeholders. When you choose a
+              template,
+              your service will fill the placeholders with variables in Service API. You can add receipts for each
+              service.
+            </p>
+            <img class="image" src="/static/img/docs/create-service-122456.jpg" alt="" />
+            <p>
+              The above image is a very good example of usage. It's using a special template. The system will choose the
+              right template designed for this service and update the variables using a template placeholder.
+            </p>
+          </section>
+          <section  class="mb-12" id="sending">
+            <h3  class="text-xl font-bold">Sending Emails Manually</h3>
+            <p>
+              Sendbox is design to work with APIs and also allows you to resend the emails. But if you wish to
+              test the templates or new products, you may use manual email sending system. All you need is to
+              choose a template or product and click on the Send Email button. The system will prepar you a wizard form
+              based on your selection.
+            </p>
+    
+            <img class="image" src="/static/img/docs/send-manual-email-122727.jpg" alt="" />
+          </section>
+    
+          <section  class="mb-12" id="token">
+            <h3  class="text-xl font-bold">Generating API Token</h3>
+            <p>
+              Communication with your application and system is based on API. We're using API Token to protect the
+              SendBox. You need to generate your
+              API Key from the Settings page. Don't forget to copy the key after you generated it.
+            </p>
+    
+            <img class="image" src="/static/img/docs/create_api_key.jpg" alt="" />
+          </section>
+          <section  class="mb-12" id="api">
+            <h3  class="text-xl font-bold">API Endpoints</h3>
+    
+            <p>
+              SendBox has two API endpoints. You may choose a product to send the email or you may choose a template. If
+              you will send a
+              notification or announcement, choosing a template will be a better choice.
+            </p>
+            <pre>{API_URL}/api/services/{SERVICE_SLUG}/send</pre>
+            <p>Listing all registed services</p>
+            <pre><p>{API_URL}/api/services</p></pre>
+    
+            <p>Single service with template placeholders</p>
+            <pre><p>
+      {API_URL}/api/services/{SERVICE_SLUG}/show
+    </p></pre>
+    
+    
+            <p>Get all templates:</p>
+            <pre><p>
+      {API_URL}/api/templates
+    </p></pre>
+    
+    
+            <p>All sent emails</p>
+            <pre><p>
+      {API_URL}/api/audit/emails
+    </p></pre>
+            <p>
+              Both API URL is token-based protected. You must send this token in the
+              Authorization header when making requests to protected resources:
+            </p>
+    
+    
+            <pre>Authorization: Bearer {$token}</pre>
+          </section>
+    
+          <section  class="mb-12" id="working">
+            <h3  class="text-xl font-bold">Working with API</h3>
+            <p>Each template or product page also shows you a presentation of the JSON body with an example.
+              While creating API clients, will give you a start point.
+    
+            </p>
+    
+            <pre>
+      <p>
+        {
+              "customer_name": "John Doe",
+              "order_numver": "ABC101010101",
+              "serial_key": "5555-5555-5555-5555"
+      }
+    </p>
+    </pre>
+    
+    
+            <p>
+              As you see that, both API must have email and transaction_id entries in the first part of the JSON body.
+              If you choose a product, you should provide the SKU of the product. If you'll use a directly template,
+              you need to enter template ID.
+            </p>
+          </section>
+          <section  class="mb-12" id="auditing">
+            <h3  class="text-xl font-bold">Auditing Emails</h3>
+            <p>Copy of each mail stored in the database. You may filter the results by email or transaction Id.
+              You may use the order Ids as transaction Id, so you may easily find a copy of the email in the database.
+            </p>
+          </section>
+    
+    
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <!-- ====== Footer Section Start -->
+    <footer class="relative z-10 bg-primary pt-20 lg:pt-[10px]">
+    
+      <div class="border-t border-primary border-opacity-40 py-8 lg:mt-[20px]">
+        <div class="container">
+          <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4 md:w-2/3 lg:w-1/2">
+              <div class="my-1">
+                <div
+                  class="-mx-3 flex items-center justify-center md:justify-start"
+                >
+                  <a
+                    href="privacy-policy"
+                    class="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Privacy policy
+                  </a>
+                  <a
+                    href="legal-notice"
+                    class="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Legal notice
+                  </a>
+                  <a
+                    href="tos"
+                    class="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Terms of service
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-4 md:w-1/3 lg:w-1/2">
+              <div class="my-1 flex justify-center md:justify-end">
+                <p class="text-base text-gray-7">
+                  &copy; 2024 <a href="https://github.com/kemalyen">Kemal Yenilmez</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ====== Footer Section End --></body>
+
+</html>
