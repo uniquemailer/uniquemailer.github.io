@@ -25,6 +25,9 @@ export default {
         padding: "16px",
       },
       extend: {
+        fontFamily: {
+          inter: ['"Inter"']
+        },        
         colors: {
           black: "#212b36",
           "dark-700": "#090e34b3",

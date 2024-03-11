@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width" />
     <title>Documentation</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/images/favicon-16x16.png">
-    <link rel="manifest" href="src/assets/images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
 
   <script type="module" crossorigin src="/assets/main-gpkXrv_Y.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-Ci2qAMDY.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-BAgbwn2o.css">
 </head>
 
 <body>
@@ -22,14 +22,14 @@
         <div class="relative -mx-4 flex items-center justify-between">
           <div class="w-60 max-w-full px-4">
             <h4 class="mb-3 text-4xl font-bold text-zinc-900 dark:text-white font-mono header-logo w-full">
-              <a href="/" class="block w-full py-5 navbar-logo">
+              <a href="/" class="block w-full py-5 navbar-logo font-inter">
                 <span class="italic text-white">unique</span>mailer
               </a>
             </h4>
     
           </div>
           <div class="flex w-full items-center justify-between px-4">
-            <div>
+            <div class="">
               <button id="navbarToggler"
                 class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
                 <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
@@ -39,14 +39,6 @@
               <nav id="navbarCollapse"
                 class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
                 <ul class="block lg:flex 2xl:ml-20">
-    
-                  <li class="group relative">
-                    <a href="/features"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
-                      Features
-                    </a>
-                  </li>
-    
                   <li class="group relative">
                     <a href="/docs"
                       class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
@@ -179,10 +171,10 @@
             <section id="quickstart" class="mb-12">
               <h3 class="text-xl font-bold">Quickstart</h3>
               <p>
-                SendBox is built with Laravel framework. The current release is based
-                on Laravel v8. All server requirements are the same as with Laravel.
+                uniquemailer is built with Laravel framework. The current release is based
+                on Laravel v10. All server requirements are the same as with Laravel.
               </p>
-              <blockquote class="px-2 bg-gray-2 m-4">
+              <blockquote class="px-2 bg-gray-2 text-wrap">
                 <ul class="list-none">
                   <li>PHP 8.1 or higher</li>
                   <li>Laravel 9 or higher</li>
@@ -195,45 +187,50 @@
               </p>
             </section>
     
-            <section id="installation" class="mb-12">
+                    <section id="installation" class="mb-12">
               <h3 class="text-xl font-bold">Installation</h3>
               <p>Clone or download the repository to your server:</p>
     
-              <code class="px-2 bg-gray-2 m-4">
-                  git clone https://github.com/sendboxuk/application.git
-                </code>
+              <blockquote class="px-2 bg-gray-2 text-wrap">
+                  git clone https://github.com/uniquemailer/application.git
+                </blockquote>
     
               <p>or download latest release from:</p>
     
-              <code class="px-2 bg-gray-2 m-4"> https://github.com/sendboxuk/application/releases </code>
+              <blockquote class="px-2 bg-gray-2 text-wrap"> https://github.com/uniquemailer/application/releases </blockquote>
     
               <p>Run composer to install dependecies</p>
     
-              <cod class="px-2 bg-gray-2 m-4"> composer install </code>
+              <blockquote class="px-2 bg-gray-2 text-wrap"> composer install </blockquote>
     
                 <p>Update application permissions</p>
     
-                <code class="px-2 bg-gray-2 m-4">
+                <blockquote class="px-2 bg-gray-2 text-wrap">
                   chmod -R 755 storage sudo chown -R www-data:www-data storage
                   bootstrap public/logo
-                </code>
+                </blockquote>
                 <p>
                   Create a database in your mysql or mariadb and migration tool and
                   populate the database with sample data
                 </p>
     
-                <code class="px-2 bg-gray-2 m-4"> php artisan migrate:refresh --seed </code>
+                <blockquote class="px-2 bg-gray-2 text-wrap"> php artisan migrate:refresh --seed </blockquote>
     
                 <p>
                   Now your application is ready to run. Browse to your website and login
                   with following credentials:
                 </p>
-                <code class="px-2 bg-gray-2 m-4">
+                <blockquote class="px-2 bg-gray-2 text-wrap">
                   username: test@example.com 
     
                   password: password
-                </code>
+                </blockquote>
             </section>
+    
+    
+            
+    
+    
     
     
             <section id="configuration" class="mb-12">
@@ -249,7 +246,7 @@
                 more details by visiting
                 the URL below.
               </p>
-              <code>https://laravel.com/docs/10.x/configuration</code>
+                <blockquote class="px-2 bg-gray-2 text-wrap">https://laravel.com/docs/10.x/configuration</blockquote>
     
               <p>
                 The current version is only supporting SMTP option. The new mail driver are on the way. You may setup the
@@ -264,23 +261,23 @@
     
           <section id="queues"  class="mb-12">
             <h3  class="text-xl font-bold">Running Queues</h3>
-            <p class="mb-12">SendBox supports Queues by default. If you follow Laravel's Queue instruction, it will give a great
+            <p>uniquemailer supports Queues by default. If you follow Laravel's Queue instruction, it will give a great
               performance under heavy traffic</p>
     
             <span class="font-semibold">Default queue</span>
              
-      <pre>php artisan queue:worl --queue=emails --tries=3
+      <pre class="text-wrap">php artisan queue:worl --queue=emails --tries=3
     </pre>
      
             <span class="font-semibold">Try failed job</span>
             
-      <pre>php artisan queue:failed --queue=emails
+      <pre  class="text-wrap">php artisan queue:failed --queue=emails
     </pre>
      
             <span class="font-semibold">Prune failed jobs after 48 hours</span>
             <span class="font-semibold">Try failed job</span>
             
-      <pre>php artisan queue:prune-failed --hours=48
+      <pre  class="text-wrap">php artisan queue:prune-failed --hours=48
     </pre>
     
           </section>
@@ -288,7 +285,7 @@
           <section  class="mb-12" id="templates">
             <h3  class="text-xl font-bold">Creating Templates</h3>
             <p>
-              Templates are playing a major role in SendBox.
+              Templates are playing a major role.
               You need to design your template carefully.
               You need to place your variables as mustache template syntax.
     
@@ -318,7 +315,7 @@
           <section  class="mb-12" id="email_templates">
             <h3  class="text-xl font-bold">Email Template and Variables</h3>
             <p>
-              SendBox allows you to create and update email templates online. First, you need to create a template
+              The application allows you to create and update email templates online. First, you need to create a template
               record before updating HTML.
               After adding the placeholders into template mode, you may start to update the template. The template page
               has a highlighting editor.
@@ -344,7 +341,7 @@
           <section  class="mb-12" id="sending">
             <h3  class="text-xl font-bold">Sending Emails Manually</h3>
             <p>
-              Sendbox is design to work with APIs and also allows you to resend the emails. But if you wish to
+              Designed to work with APIs and also allows you to resend the emails. But if you wish to
               test the templates or new products, you may use manual email sending system. All you need is to
               choose a template or product and click on the Send Email button. The system will prepar you a wizard form
               based on your selection.
@@ -357,7 +354,7 @@
             <h3  class="text-xl font-bold">Generating API Token</h3>
             <p>
               Communication with your application and system is based on API. We're using API Token to protect the
-              SendBox. You need to generate your
+              software. You need to generate your
               API Key from the Settings page. Don't forget to copy the key after you generated it.
             </p>
     
@@ -367,28 +364,28 @@
             <h3  class="text-xl font-bold">API Endpoints</h3>
     
             <p>
-              SendBox has two API endpoints. You may choose a product to send the email or you may choose a template. If
+              The software has two API endpoints. You may choose a product to send the email or you may choose a template. If
               you will send a
               notification or announcement, choosing a template will be a better choice.
             </p>
-            <pre>{API_URL}/api/services/{SERVICE_SLUG}/send</pre>
+            <pre  class="text-wrap">{API_URL}/api/services/{SERVICE_SLUG}/send</pre>
             <p>Listing all registed services</p>
-            <pre><p>{API_URL}/api/services</p></pre>
+            <pre  class="text-wrap"><p>{API_URL}/api/services</p></pre>
     
             <p>Single service with template placeholders</p>
-            <pre><p>
+            <pre  class="text-wrap"><p>
       {API_URL}/api/services/{SERVICE_SLUG}/show
     </p></pre>
     
     
             <p>Get all templates:</p>
-            <pre><p>
+            <pre  class="text-wrap"><p>
       {API_URL}/api/templates
     </p></pre>
     
     
             <p>All sent emails</p>
-            <pre><p>
+            <pre  class="text-wrap"><p>
       {API_URL}/api/audit/emails
     </p></pre>
             <p>
@@ -397,7 +394,7 @@
             </p>
     
     
-            <pre>Authorization: Bearer {$token}</pre>
+            <pre  class="text-wrap">Authorization: Bearer {$token}</pre>
           </section>
     
           <section  class="mb-12" id="working">
@@ -407,7 +404,7 @@
     
             </p>
     
-            <pre>
+            <pre  class="text-wrap">
       <p>
         {
               "customer_name": "John Doe",
