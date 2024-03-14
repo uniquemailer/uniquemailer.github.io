@@ -26,7 +26,8 @@ export default {
       },
       extend: {
         fontFamily: {
-          inter: ['"Inter"']
+          inter: ['"Inter"'],
+          madimi: ['"Madimi One", sans-serif']
         },        
         colors: {
           black: "#212b36",

@@ -11,7 +11,7 @@
     <link rel="manifest" href="/assets/images/site.webmanifest">
 
   <script type="module" crossorigin src="/assets/main-gpkXrv_Y.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-CwqsDwP1.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-DD7nScOs.css">
 </head>
 
 <body>
@@ -26,8 +26,8 @@
             <h4
               class="mb-3 text-4xl font-bold text-zinc-900 dark:text-white font-mono header-logo w-full"
             >
-              <a href="/" class="block w-full py-5 navbar-logo font-inter">
-                <span class="italic text-white">unique</span>mailer
+              <a href="/" class="block w-full py-5 navbar-logo">
+                <span class=" text-white font-madimi">unique</span><span class="font-madimi">mailer</span>
               </a>
             </h4>
     
@@ -68,7 +68,7 @@
                       href="/guide"
                       class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
                     >
-                      Guide
+                      Starter Guide
                     </a>
                   </li>
     
@@ -157,71 +157,68 @@
     <section class="pb-8 pt-20 dark:bg-dark lg:pb-[70px]">
       <div class="container mx-auto px-4">
         <div class="-mx-4 flex flex-wrap">
-    
           <div class="w-full md:w-1/2 lg:w-1/3">
-    
-            <ul class="list-none">
-              <li class="mb-6">
+            <ul class="list-none px-4">
+              <li class="mb-2">
                 <a href="#quickstart"
                   class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Quickstart</a>
               </li>
     
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#installation"
                   class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Installation</a>
               </li>
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#configuration"
                   class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Configuration</a>
               </li>
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#queues" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Running
                   Queues</a>
               </li>
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#templates" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Creating
                   Templates</a>
               </li>
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#placeholders"
                   class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Placeholders</a>
               </li>
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#email_templates"
                   class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Email Templates</a>
               </li>
     
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#services" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Setting
                   up Services</a>
               </li>
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#sending" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Sending
                   emails manually</a>
               </li>
     
-              <li class=" mb-6">
+              <li class="mb-2">
                 <a href="#token" class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Generating
                   API Token</a>
               </li>
-              <li class=" mb-6"><a href="#api"
+              <li class="mb-2"><a href="#api"
                   class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">API Endpoints</a></li>
-              <li class=" mb-6"><a href="#working"
+              <li class="mb-2"><a href="#working"
                   class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Working with API</a></li>
-              <li class=" mb-6"><a href="#auditing"
+              <li class="mb-2"><a href="#auditing"
                   class="no-underline hover:underline text-blue-600 hover:text-blue-800 text-lg">Auditing Emails</a></li>
             </ul>
-    
           </div>
           <div class="w-full md:w-1/2 lg:w-2/3">
     
-            <section id="quickstart" class="mb-12">
+            <section id="quickstart" class="mb-12 px-4">
               <h3 class="text-xl font-bold">Quickstart</h3>
-              <p>
+              <p class="pb-2">
                 uniquemailer is built with Laravel framework. The current release is based
                 on Laravel v10. All server requirements are the same as with Laravel.
               </p>
-              <blockquote class="px-2 bg-gray-2 text-wrap">
+              <blockquote class="px-2 bg-gray-2 pb-4 text-wrap">
                 <ul class="list-none">
                   <li>PHP 8.1 or higher</li>
                   <li>Laravel 9 or higher</li>
@@ -229,73 +226,75 @@
                   <li>MySQL 5.7 or higher</li>
                 </ul>
               </blockquote>
-              <p>
+              <p class="pb-2">
                 We highly recomend you to use Redis for cache and queue support.
               </p>
             </section>
     
-                    <section id="installation" class="mb-12">
+    
+    
+            <section id="installation" class="mb-12  px-4">
               <h3 class="text-xl font-bold">Installation</h3>
-              <p>Clone or download the repository to your server:</p>
+              <p class="pb-2">Clone or download the repository to your server:</p>
+    
+              <blockquote class="px-2 bg-gray-2  pb-4 text-wrap">
+                git clone https://github.com/uniquemailer/application.git
+              </blockquote>
+    
+              <p class="pb-2">or download latest release from:
+    
+                <a href="https://github.com/uniquemailer/application/releases">Github releases</a>
+              </p>
+              <p class="pb-2">Run composer to install dependecies</p>
+    
+              <blockquote class="px-2  pb-4 bg-gray-2 text-wrap"> composer install </blockquote>
+    
+              <p class="pb-2">Update application permissions</p>
     
               <blockquote class="px-2 bg-gray-2 text-wrap">
-                  git clone https://github.com/uniquemailer/application.git
-                </blockquote>
+                chmod -R 755 storage sudo chown -R www-data:www-data storage
+                bootstrap public/logo
+              </blockquote>
+              <p class="pb-2">
+                Create a database in your mysql or mariadb and migration tool and
+                populate the database with sample data
+              </p>
     
-              <p>or download latest release from:</p>
+              <blockquote class="px-2 bg-gray-2 text-wrap"> php artisan migrate:refresh --seed </blockquote>
     
-              <blockquote class="px-2 bg-gray-2 text-wrap"> https://github.com/uniquemailer/application/releases </blockquote>
+              <p class="pb-2">
+                Now your application is ready to run. Browse to your website and login
+                with following credentials:
+              </p>
+              <blockquote class="px-2 bg-gray-2 text-wrap">
+                username: test@example.com
     
-              <p>Run composer to install dependecies</p>
-    
-              <blockquote class="px-2 bg-gray-2 text-wrap"> composer install </blockquote>
-    
-                <p>Update application permissions</p>
-    
-                <blockquote class="px-2 bg-gray-2 text-wrap">
-                  chmod -R 755 storage sudo chown -R www-data:www-data storage
-                  bootstrap public/logo
-                </blockquote>
-                <p>
-                  Create a database in your mysql or mariadb and migration tool and
-                  populate the database with sample data
-                </p>
-    
-                <blockquote class="px-2 bg-gray-2 text-wrap"> php artisan migrate:refresh --seed </blockquote>
-    
-                <p>
-                  Now your application is ready to run. Browse to your website and login
-                  with following credentials:
-                </p>
-                <blockquote class="px-2 bg-gray-2 text-wrap">
-                  username: test@example.com 
-    
-                  password: password
-                </blockquote>
+                password: password
+              </blockquote>
             </section>
     
     
-            
     
     
     
     
-            <section id="configuration" class="mb-12">
+    
+            <section id="configuration" class="mb-12  px-4">
               <h3 class="text-xl font-bold">Configuration</h3>
     
-              <p>
+              <p class="pb-2">
                 You need to update the environment variables in
                 <code>.env</code> file. You will find this file at the root of the application.
               </p>
     
-              <p>
+              <p class="pb-2">
                 All of the configuration files for the Laravel framework are stored in the config directory. You may get
                 more details by visiting
-                the URL below.
-              </p>
-                <blockquote class="px-2 bg-gray-2 text-wrap">https://laravel.com/docs/10.x/configuration</blockquote>
+                the URL below:
     
-              <p>
+                <a href="https://laravel.com/docs/11.x/configuration">Laravel configuration page</a>
+              </p>
+              <p class="pb-2">
                 The current version is only supporting SMTP option. The new mail driver are on the way. You may setup the
                 mail
                 driver using
@@ -306,174 +305,160 @@
     
     
     
-          <section id="queues"  class="mb-12">
-            <h3  class="text-xl font-bold">Running Queues</h3>
-            <p>uniquemailer supports Queues by default. If you follow Laravel's Queue instruction, it will give a great
-              performance under heavy traffic</p>
+            <section id="queues" class="mb-12  px-4">
+              <h3 class="text-xl font-bold">Running Queues</h3>
+              <p class="pb-2">uniquemailer supports Queues by default. If you follow Laravel's Queue instruction, it will give a great
+                performance under heavy traffic</p>
     
-            <span class="font-semibold">Default queue</span>
-             
-      <pre class="text-wrap">php artisan queue:worl --queue=emails --tries=3
-    </pre>
-     
-            <span class="font-semibold">Try failed job</span>
-            
-      <pre  class="text-wrap">php artisan queue:failed --queue=emails
-    </pre>
-     
-            <span class="font-semibold">Prune failed jobs after 48 hours</span>
-            <span class="font-semibold">Try failed job</span>
-            
-      <pre  class="text-wrap">php artisan queue:prune-failed --hours=48
+              <span class="font-semibold">Default queue</span>
+    
+              <pre class="text-wrap">php artisan queue:work --queue=emails --tries=3</pre>
+    
+              <span class="font-semibold">Try failed job</span>
+    
+              <pre class="text-wrap">php artisan queue:failed --queue=emails</pre>
+    
+              <span class="font-semibold">Prune failed jobs after 48 hours</span>
+              <span class="font-semibold">Try failed job</span>
+    
+              <pre class="text-wrap">php artisan queue:prune-failed --hours=48
     </pre>
     
-          </section>
+            </section>
     
-          <section  class="mb-12" id="templates">
-            <h3  class="text-xl font-bold">Creating Templates</h3>
-            <p>
-              Templates are playing a major role.
-              You need to design your template carefully.
-              You need to place your variables as mustache template syntax.
+            <section class="mb-12  px-4" id="templates">
+              <h3 class="text-xl font-bold">Creating Templates</h3>
+              <p class="pb-2">
+                Templates are playing a major role.
+                You need to design your template carefully.
+                You need to place your variables as mustache template syntax.
     
-              After creating template details, you may start to update the HTML codes using onli editor.
-            </p>
-            <span class="font-semibold">Now first, you need to create template details with placeholders</span>
-            <p>
-              You will put these variables into placeholders' textarea separating with comma. The system will replace
-              your values before sending the email.
-            </p>
+                After creating template details, you may start to update the HTML codes using onli editor.
+              </p>
+              <span class="font-semibold">Now first, you need to create template details with placeholders</span>
+              <p class="pb-2">
+                You will put these variables into placeholders' textarea separating with comma. The system will replace
+                your values before sending the email.
+              </p>
     
-            <p>
-              After creating a template, you may start to update the HTML codes of the email. Online editor gives you
-              the same working at your computer.
-            </p>
-          </section>
-          <section  class="mb-12" id="placeholders">
-            <h3  class="text-xl font-bold">Sensitive Placeholders</h3>
-            <p>
-              Placeholders are the variables in your email templates. You need to set the variable names
-              while creating your templates. By default, all placeholders are saving to audit log table to
-              review or resend. If you're sending a sensitive information and not wanting to save to the database,
-              you should put your variable name in sebsitive placeholder textbox.
-            </p>
+              <p class="pb-2">
+                After creating a template, you may start to update the HTML codes of the email. Online editor gives you
+                the same working at your computer.
+              </p>
+            </section>
+            <section class="mb-12  px-4" id="placeholders">
+              <h3 class="text-xl font-bold">Sensitive Placeholders</h3>
+              <p class="pb-2">
+                Placeholders are the variables in your email templates. You need to set the variable names
+                while creating your templates. By default, all placeholders are saving to audit log table to
+                review or resend. If you're sending a sensitive information and not wanting to save to the database,
+                you should put your variable name in sebsitive placeholder textbox.
+              </p>
     
-          </section>
-          <section  class="mb-12" id="email_templates">
-            <h3  class="text-xl font-bold">Email Template and Variables</h3>
-            <p>
-              The application allows you to create and update email templates online. First, you need to create a template
-              record before updating HTML.
-              After adding the placeholders into template mode, you may start to update the template. The template page
-              has a highlighting editor.
-            </p>
-     
-          </section>
+            </section>
+            <section class="mb-12  px-4" id="email_templates">
+              <h3 class="text-xl font-bold">Email Template and Variables</h3>
+              <p class="pb-2">
+                The application allows you to create and update email templates online. First, you need to create a template
+                record before updating HTML.
+                After adding the placeholders into template mode, you may start to update the template. The template page
+                has a highlighting editor.
+              </p>
     
-    
-          <section  class="mb-12" id="services">
-            <h3  class="text-xl font-bold">Setting up Services</h3>
-            <p>
-              Create a service and choose a template. Each template has its own placeholders. When you choose a
-              template,
-              your service will fill the placeholders with variables in Service API. You can add receipts for each
-              service.
-            </p>
-            <img class="image" src="/static/img/docs/create-service-122456.jpg" alt="" />
-            <p>
-              The above image is a very good example of usage. It's using a special template. The system will choose the
-              right template designed for this service and update the variables using a template placeholder.
-            </p>
-          </section>
-          <section  class="mb-12" id="sending">
-            <h3  class="text-xl font-bold">Sending Emails Manually</h3>
-            <p>
-              Designed to work with APIs and also allows you to resend the emails. But if you wish to
-              test the templates or new products, you may use manual email sending system. All you need is to
-              choose a template or product and click on the Send Email button. The system will prepar you a wizard form
-              based on your selection.
-            </p>
-    
-            <img class="image" src="/static/img/docs/send-manual-email-122727.jpg" alt="" />
-          </section>
-    
-          <section  class="mb-12" id="token">
-            <h3  class="text-xl font-bold">Generating API Token</h3>
-            <p>
-              Communication with your application and system is based on API. We're using API Token to protect the
-              software. You need to generate your
-              API Key from the Settings page. Don't forget to copy the key after you generated it.
-            </p>
-    
-            <img class="image" src="/static/img/docs/create_api_key.jpg" alt="" />
-          </section>
-          <section  class="mb-12" id="api">
-            <h3  class="text-xl font-bold">API Endpoints</h3>
-    
-            <p>
-              The software has two API endpoints. You may choose a product to send the email or you may choose a template. If
-              you will send a
-              notification or announcement, choosing a template will be a better choice.
-            </p>
-            <pre  class="text-wrap">{API_URL}/api/services/{SERVICE_SLUG}/send</pre>
-            <p>Listing all registed services</p>
-            <pre  class="text-wrap"><p>{API_URL}/api/services</p></pre>
-    
-            <p>Single service with template placeholders</p>
-            <pre  class="text-wrap"><p>
-      {API_URL}/api/services/{SERVICE_SLUG}/show
-    </p></pre>
+            </section>
     
     
-            <p>Get all templates:</p>
-            <pre  class="text-wrap"><p>
-      {API_URL}/api/templates
-    </p></pre>
+            <section class="mb-12  px-4" id="services">
+              <h3 class="text-xl font-bold">Setting up Services</h3>
+              <p class="pb-2">
+                Create a service and choose a template. Each template has its own placeholders. When you choose a
+                template,
+                your service will fill the placeholders with variables in Service API. You can add receipts for each
+                service.
+              </p>
+    
+              <p class="pb-2">
+                The above image is a very good example of usage. It's using a special template. The system will choose the
+                right template designed for this service and update the variables using a template placeholder.
+              </p>
+            </section>
+            <section class="mb-12  px-4" id="sending">
+              <h3 class="text-xl font-bold">Sending Emails Manually</h3>
+              <p class="pb-2">
+                Designed to work with APIs and also allows you to resend the emails. But if you wish to
+                test the templates or new products, you may use manual email sending system. All you need is to
+                choose a template or product and click on the Send Email button. The system will prepar you a wizard form
+                based on your selection.
+              </p>
+    
+            </section>
+    
+            <section class="mb-12  px-4" id="token">
+              <h3 class="text-xl font-bold">Generating API Token</h3>
+              <p class="pb-2">
+                Communication with your application and system is based on API. We're using API Token to protect the
+                software. You need to generate your
+                API Key from the Settings page. Don't forget to copy the key after you generated it.
+              </p>
+    
+            </section>
+            <section class="mb-12  px-4" id="api">
+              <h3 class="text-xl font-bold">API Endpoints</h3>
+    
+              <p class="pb-2">
+                The software has two API endpoints. You may choose a product to send the email or you may choose a template.
+                If
+                you will send a
+                notification or announcement, choosing a template will be a better choice.
+              </p>
+              <pre class="text-wrap p-2">/api/services/{SERVICE_SLUG}/send</pre>
+              <p class="pb-2">Listing all registed services</p>
+              <pre class="text-wrap p-2"><p class="pb-2">/api/services</p></pre>
+    
+              <p class="pb-2">Single service with template placeholders</p>
+              <pre class="text-wrap p-2">/api/services/{SERVICE_SLUG}/show</pre>
+    
+              <p class="pb-2">Get all templates:</p>
+              <pre class="text-wrap p-2">/api/templates</pre>
     
     
-            <p>All sent emails</p>
-            <pre  class="text-wrap"><p>
-      {API_URL}/api/audit/emails
-    </p></pre>
-            <p>
-              Both API URL is token-based protected. You must send this token in the
-              Authorization header when making requests to protected resources:
-            </p>
+              <p class="pb-2">All sent emails</p>
+              <pre class="text-wrap p-2">/api/audit/emails</pre>
+    
+              <p class="pb-2">
+                Both API URL is token-based protected. You must send this token in the
+                Authorization header when making requests to protected resources:
+              </p>
     
     
-            <pre  class="text-wrap">Authorization: Bearer {$token}</pre>
-          </section>
+              <pre class="text-wrap p-2">Authorization: Bearer {$token}</pre>
+            </section>
     
-          <section  class="mb-12" id="working">
-            <h3  class="text-xl font-bold">Working with API</h3>
-            <p>Each template or product page also shows you a presentation of the JSON body with an example.
-              While creating API clients, will give you a start point.
+            <section class="mb-12  px-4" id="working">
+              <h3 class="text-xl font-bold">Working with API</h3>
+              <p class="pb-2">Each template or product page also shows you a presentation of the JSON body with an example.
+                While creating API clients, will give you a start point.
     
-            </p>
+              </p>
     
-            <pre  class="text-wrap">
-      <p>
-        {
+              <code class="text-wrap">{
               "customer_name": "John Doe",
               "order_numver": "ABC101010101",
-              "serial_key": "5555-5555-5555-5555"
-      }
-    </p>
-    </pre>
+              "serial_key": "5555-5555-5555-5555"}</code>
     
     
-            <p>
-              As you see that, both API must have email and transaction_id entries in the first part of the JSON body.
-              If you choose a product, you should provide the SKU of the product. If you'll use a directly template,
-              you need to enter template ID.
-            </p>
-          </section>
-          <section  class="mb-12" id="auditing">
-            <h3  class="text-xl font-bold">Auditing Emails</h3>
-            <p>Copy of each mail stored in the database. You may filter the results by email or transaction Id.
-              You may use the order Ids as transaction Id, so you may easily find a copy of the email in the database.
-            </p>
-          </section>
+              <p class="pb-2">
+                As you see that, both API must have email and transaction_id entries in the first part of the JSON body.
+                If you choose a product, you should provide the SKU of the product. If you'll use a directly template,
+                you need to enter template ID.
+              </p>
+            </section>
+            <section class="mb-12  px-4" id="auditing">
+              <h3 class="text-xl font-bold">Auditing Emails</h3>
+              <p class="pb-2">Copy of each mail stored in the database. You may filter the results by email or transaction Id.
+                You may use the order Ids as transaction Id, so you may easily find a copy of the email in the database.
+              </p>
+            </section>
     
     
           </div>
